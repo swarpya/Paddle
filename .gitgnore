@@ -1,0 +1,75 @@
+# --- Python Standard ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual Environments ---
+# It's common to name the venv 'env' or '.venv'
+venv/
+env/
+.env
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- PaddleOCR & Deep Learning ---
+# Ignore downloaded model files (they are large and can be re-downloaded)
+# PaddleOCR often defaults to saving models in user home, but if local:
+inference/
+*.pdmodel
+*.pdiparams
+*.pdopt
+
+# Ignore default output directories created by PaddleOCR
+inference_results/
+output/
+test_result/
+
+# --- Images & Data ---
+# Prevent accidental commit of test images or PDFs
+# (Uncomment the lines below if you want to keep test assets in the repo)
+# *.jpg
+# *.jpeg
+# *.png
+# *.pdf
+
+# --- Logs ---
+*.log
+*.log.*
+
+# --- VS Code / Codespaces ---
+# Keep .vscode/settings.json if it contains shared project settings
+# Ignore personal workspace storage
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- OS Generated Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
